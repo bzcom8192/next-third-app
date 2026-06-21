@@ -60,7 +60,7 @@ export default function Result() {
                 คัดลอก
               </button>
               <button
-                onClick={() => router.push("/moneyshareinput")}
+                onClick={() => router.back()}
                 className="w-32 bg-gray-500 text-white text-base px-4 py-2 rounded hover:bg-gray-600 transition-colors duration-200 cursor-pointer"
               >
                 คำนวณใหม่
