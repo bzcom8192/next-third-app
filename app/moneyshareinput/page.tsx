@@ -23,8 +23,10 @@ export default function Page() {
       setTimeout(() => setAlertMessage(""), 3000);
       return;
     }
-    const share = amountNum / peopleNum;
-    const q = new URLSearchParams({ share: share.toFixed(2) }).toString();
+    const q = new URLSearchParams({
+      amount: amount,
+      people: numberOfPeople,
+    }).toString();
     router.push(`/moneyshareoutput?${q}`);
   };
 
